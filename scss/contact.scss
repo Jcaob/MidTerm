@@ -1,4 +1,17 @@
 .contact-wrapper{
   height: 100%;
   width: 85%;
+  margin: 0 auto;
+  .form-wrapper{
+    width: 20%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .submit{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+  }
 }

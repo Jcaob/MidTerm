@@ -153,4 +153,38 @@ h5 {
   text-align: center;
 }
 
+@media (max-width: 390px){
+    
+    .nav-wrapper{
+        display: none;
+    }
+
+    .nav-wrapper-black{
+        display: none;
+    }
+    
+    
+    
+}
+@media (max-width: 768px){
+
+    .nav-wrapper{
+        display: none;
+    }
+    
+    .nav-mobile-wrapper{
+        visibility: visible;
+       
+    }
+    
+}
+
+#ham-icon{
+    display: block;
+}
+
+
+
+ 
+
 /*# sourceMappingURL=styles.css.map */

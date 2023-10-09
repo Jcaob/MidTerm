@@ -3,6 +3,7 @@ export function changePage(hashTag, pageName){
     if(pageName == ""){
         $.get(`pages/home.html`, (data) =>{
             $("#app").html(data);
+            console.log(data)
         }).fail(() =>{
             console.log("failed")
         })

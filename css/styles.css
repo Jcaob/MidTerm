@@ -12,4 +12,145 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+.nav-wrapper {
+  height: 90px;
+  width: 100vw;
+  display: contents;
+}
+.nav-wrapper nav {
+  width: 100vw;
+  height: 108px;
+  border-bottom: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-wrapper nav .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-wrapper nav .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: SegNorm;
+  display: flex;
+  align-items: center;
+}
+.nav-wrapper nav .links a:hover {
+  font-size: large;
+}
+
+.nav-mobile-wrapper {
+  visibility: hidden;
+  height: 74px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-mobile-wrapper .links {
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-mobile-wrapper .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: SegNorm;
+  display: flex;
+  align-items: center;
+}
+.nav-mobile-wrapper .links a:hover {
+  font-size: large;
+}
+
+#ham-icon {
+  float: right;
+  display: none;
+  cursor: pointer;
+}
+
+#ham-icon div {
+  width: 55px;
+  height: 10px;
+  border-radius: 38px;
+  background-color: black;
+  margin: 10px 0;
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 3000px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background-color: #587C83;
+  z-index: 99;
+}
+.mobile-menu li {
+  list-style-type: none;
+  margin: 20px;
+}
+.mobile-menu a {
+  color: white;
+  font-size: 20px;
+  font-family: LM;
+  text-decoration: none;
+}
+.mobile-menu a:hover {
+  font-family: LMB;
+}
+
+.about-wrapper {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.about-wrapper .about-para {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.contact-wrapper {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+}
+.contact-wrapper .form-wrapper {
+  width: 20%;
+  height: 100%;
+  margin: 0 auto;
+}
+.contact-wrapper .submit {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 25px;
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+h5 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

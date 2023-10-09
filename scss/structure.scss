@@ -10,16 +10,139 @@ h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
 }
 
-nav{
-  height: 50px;
-  width: 100%;
-  background-color: teal;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  a{
-    text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-  }
+.nav-wrapper{
+    height: 90px;
+    width: 100vw;
+    display:contents;
+    
+    
+    nav{
+    width: 100vw;
+    height: 108px;
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    
+
+
+    .links{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family: SegNorm;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            font-size: large;
+        }
+
+        
+        }
+
+        
+    }
+}
+
+
+
+.nav-mobile-wrapper{
+    visibility: hidden;
+    height: 74px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+
+    
+
+
+    .links{
+        width: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family: SegNorm;
+            display: flex;
+            align-items: center;
+        }
+
+        a:hover{
+            font-size: large;
+        }
+
+        
+        }
+
+
+
+}
+
+
+
+#ham-icon{
+    float: right;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#ham-icon div{
+    width: 55px;
+    height: 10px;
+    border-radius: 38px;
+    background-color: black;
+    margin: 10px 0;
+    transition: 0.4s;
+    margin-left: 10px;
+}
+
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3000px;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background-color: #587C83;
+    z-index:99;
+    li{
+        list-style-type: none;
+        margin: 20px;
+    }
+    a{
+        color: white;
+        font-size: 20px;
+        font-family: LM;
+        text-decoration: none;
+        
+    }
+    a:hover{
+        font-family: LMB;
+    }
+    
 }
